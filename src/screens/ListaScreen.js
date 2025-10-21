@@ -158,12 +158,19 @@ export default function ListaScreen() {
               {editandoId ? 'Editar producto ✏️' : 'Agregar producto ➕'}
             </Text>
 
+            <Text>
+              Nombre:
+            </Text>
             <TextInput
               placeholder="Nombre del producto"
               value={nombre}
               onChangeText={setNombre}
               style={styles.input}
             />
+
+            <Text>
+              Precio:
+            </Text>
             <TextInput
               placeholder="Precio"
               value={precio}
@@ -171,6 +178,10 @@ export default function ListaScreen() {
               keyboardType="numeric"
               style={styles.input}
             />
+
+            <Text>
+              Cantidad:
+            </Text>
             <TextInput
               placeholder="Cantidad"
               value={cantidad}
