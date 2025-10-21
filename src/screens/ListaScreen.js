@@ -141,7 +141,7 @@ export default function ListaScreen() {
         )}
       />
 
-      <View style={{ marginTop: 10 }}>
+      <View style={styles.logoutButtonContainer}>
         <Button title="Cerrar sesión" onPress={logout} color="red" />
       </View>
 
@@ -251,5 +251,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 10,
+  },
+  logoutButtonContainer: {
+    position: 'relative',
+    top: -40,
+    right: 0,
+    zIndex: 10,
   },
 });
